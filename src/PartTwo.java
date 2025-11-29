@@ -30,10 +30,11 @@ public class PartTwo {
             }
         }
         return result;
-        
+
     }
 
     public static void main(String[] args) {
-       
+        int[] arr = new int[] { 3, 1, 2, 6, 2, 9, 6, 2 };
+        System.out.println(strictlyIncreasing(arr));
     }
 }
