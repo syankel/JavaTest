@@ -1,5 +1,81 @@
 public class PartThree {
 
+    // תכנון REST API לספריה
+    // נשתמש בפעולות הבאות כדי לנהל endPoints:
+    // GET - לקבלת מידע
+    // POST - להוספת מידע חדש
+    // PUT - לעדכון מידע קיים
+    // DELETE - למחיקת מידע קיים
+
+    // ניצור DTOs למערכת ספריה
+    // BookDTO - מייצג ספר
+    public class BookDTO {
+        public int id; // * שדה חובה
+        public String title; // * שדה חובה
+        public int authorId; // * שדה חובה
+        public String authorName; // * שדה חובה
+        public String kategory; // * שדה חובה
+        public Boolean isAvailable; // * שדה חובה
+        public int shelfNumber; // * שדה חובה
+        public int publishedYear;
+    }
+    // AuthorDTO - מייצג מחבר
+    public class AuthorDTO {
+        public int id;// * שדה חובה
+        public String name;// * שדה חובה
+    }
+    // KategoryDTO - מייצג קטגורית ספר
+    public class KategoryDTO {
+        public int id;// * שדה חובה
+        public String name;// * שדה חובה
+    }
+    // CustomerDTO - מייצג חבר ספריה
+    public class CustomerDTO {
+        public int id;// * שדה חובה
+        public String name;// * שדה חובה
+        public String email;// * שדה חובה
+        public String phoneNumber;// * שדה חובה
+        public String address;
+        public BookDTO[] borrowedBooks;//* שדה חובה
+    }
+    
+    //פעולות ה endPoints למערכת ספריה
+
+    // Books    
+        // GET /books - לקבלת רשימת כל הספרים
+        // GET /books/{id} - לקבלת פרטי ספר לפי מזהה
+        // GET /books/author/{authorId} - לקבלת כל הספרים של מחבר מסוים
+        // GET /books/kategory/{kategoryId} - לקבלת כל הספרים בקטגוריה מסוימת
+        // GET /books/available - לקבלת כל הספרים הזמינים להשאלה
+        // GET /books/shelf/{shelfNumber} - לקבלת כל הספרים על מדף מסוים
+        // POST /books - להוספת ספר חדש
+        // PUT /books/{id} - לעדכון פרטי ספר קיים
+        // DELETE /books/{id} - למחיקת ספר מרשימת הספרים
+    
+    // Authors
+        // GET /authors - לקבלת רשימת כל המחברים
+        // GET /authors/{id} - לקבלת פרטי מחבר לפי מזהה
+        // POST /authors - להוספת מחבר חדש 
+        // PUT /authors/{id} - לעדכון פרטי מחבר קיים
+        // DELETE /authors/{id} - למחיקת מחבר מרשימת המחברים
+
+    // Kategories    
+        // GET /kategories - לקבלת רשימת כל הקטגוריות
+        // GET /kategories/{id} - לקבלת פרטי קטגוריה לפי מזהה
+        // POST /kategories - להוספת קטגוריה חדשה
+        // PUT /kategories/{id} - לעדכון פרטי קטגוריה קיימת
+        // DELETE /kategories/{id} - למחיקת קטגוריה מרשימת הקטגוריות
+
+    // Customers
+        // GET /customers - לקבלת רשימת כל לקוחות הספריה
+        // GET /customers/{id} - לקבלת פרטי לקוח לפי מזהה
+        // GET /customers/borrowedBooks/{bookId} - לקבלת כל הלקוחות שהשאלו ספר מסוים
+        // POST /customers - להוספת לקוח ספריה חדש
+        // PUT /customers/{id} - לעדכון פרטי לקול ספריה קיים
+        // DELETE /customers/{id} - למחיקת לקוח ספריה מרשימת הלקוחות
+
+//--------------------------------------------
+
     // מערכת הזמנות+תשלומים
     public class items { // מחלקה זו מייצגת פריט במערכת ההזמנות
         public int idItem;
