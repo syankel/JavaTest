@@ -22,7 +22,7 @@
     javac *.java
     java Main
 
- 4. מעבר לתקיית PartOne, קומפילציה והרצה:
+ 4. מעבר לתקיית PartTwo, קומפילציה והרצה:
     cd PartTwo
     javac *.java
     java Main    
