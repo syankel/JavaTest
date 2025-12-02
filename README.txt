@@ -29,7 +29,7 @@
      "id": 1,
      "title": "משימה לדוגמה",
      "description": "תיאור המשימה",
-     "completed": false
+     "status": false
   }
 ]
 
