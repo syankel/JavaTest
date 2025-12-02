@@ -9,7 +9,7 @@ public class TaskRepository {
     private Map<Integer, TaskData> taskMap = new HashMap<>();
 
     public TaskRepository() {
-        this.filePath = "D:\\קורות חיים\\ראיונות\\מגדל\\JavaTest\\src\\PartOne\\Tasks_JSON.JSON";
+        this.filePath = "\\Tasks_JSON.JSON";
         loadFromFile();
     }
 
