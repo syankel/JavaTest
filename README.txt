@@ -22,6 +22,11 @@
     javac *.java
     java Main
 
+ 4. מעבר לתקיית PartOne, קומפילציה והרצה:
+    cd PartTwo
+    javac *.java
+    java Main    
+
 
 דוגמת מבנה JSON (Task_JSON.json)
 [

@@ -58,7 +58,7 @@ public class Main {
                         int doneId = scanner.nextInt();
                         TaskData taskToMarkDone = service.getById(doneId);
                         if (taskToMarkDone != null) {
-                            service.UpdateStatusAsDone(taskToMarkDone);
+                            service.updateStatusAsDone(taskToMarkDone);
                             System.out.println("Task marked as done!");
                         } else {
                             System.out.println("Task not found!");

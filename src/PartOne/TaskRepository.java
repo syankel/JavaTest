@@ -84,7 +84,7 @@ public class TaskRepository {
         return null;
     }
 
-    public Boolean deleteTask(int id) {
+    public boolean deleteTask(int id) {
         if (!taskMap.containsKey(id)) {
             return false;
         }

@@ -24,7 +24,7 @@ public class TaskService {
         }
     }
 
-    public void UpdateStatusAsDone(TaskData task) {
+    public void updateStatusAsDone(TaskData task) {
         TaskData t = repository.getById(task.getId());
         if (t != null) {
             task.setStatus(TaskData.Status.DONE);

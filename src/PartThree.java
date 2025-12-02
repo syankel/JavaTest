@@ -2,35 +2,35 @@ public class PartThree {
     // תכנון REST API לספריה
 
     // ניצור DTOs למערכת ספריה
-    // BookDTO - מייצג ספר
-    public class BookDTO {
+    // - מייצג ספרBookDTO
+    public class bookDTO {
         public int id; // * שדה חובה
         public String title; // * שדה חובה
         public int authorId; // * שדה חובה
         public String authorName; // * שדה חובה
         public String kategory; // * שדה חובה
-        public Boolean isAvailable; // * שדה חובה
+        public boolean isAvailable; // * שדה חובה
         public int shelfNumber; // * שדה חובה
         public int publishedYear;
     }
     // AuthorDTO - מייצג מחבר
-    public class AuthorDTO {
+    public class authorDTO {
         public int id;// * שדה חובה
         public String name;// * שדה חובה
     }
     // KategoryDTO - מייצג קטגורית ספר
-    public class KategoryDTO {
+    public class kategoryDTO {
         public int id;// * שדה חובה
         public String name;// * שדה חובה
     }
     // CustomerDTO - מייצג חבר ספריה
-    public class CustomerDTO {
+    public class customerDTO {
         public int id;// * שדה חובה
         public String name;// * שדה חובה
         public String email;// * שדה חובה
         public String phoneNumber;// * שדה חובה
         public String address;
-        public BookDTO[] borrowedBooks;//* שדה חובה
+        public bookDTO[] borrowedBooks;//* שדה חובה
     }
     
     //פעולות ה endPoints למערכת ספריה
@@ -45,7 +45,7 @@ public class PartThree {
         // POST /books - להוספת ספר חדש
         // PUT /books/{id} - לעדכון פרטי ספר קיים
         // DELETE /books/{id} - למחיקת ספר מרשימת הספרים
-    
+
     // Authors
         // GET /authors - לקבלת רשימת כל המחברים
         // GET /authors/{id} - לקבלת פרטי מחבר לפי מזהה
